@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard IoT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <h1>📊 Dashboard IoT</h1>
+
+  <div class="cards">
+    <div class="card">
+      <h2>🌡 Temperatura</h2>
+      <p id="temp">-- °C</p>
+    </div>
+
+    <div class="card">
+      <h2>💡 Luminosidade</h2>
+      <p id="lux">-- lux</p>
+    </div>
+
+    <div class="card">
+      <h2>⏱ Última atualização</h2>
+      <p id="time">--:--:--</p>
+    </div>
+  </div>
+
+  <div class="chart-container">
+    <canvas id="tempChart"></canvas>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
