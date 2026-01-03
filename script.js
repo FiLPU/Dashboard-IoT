@@ -27,6 +27,8 @@ function atualizarDados() {
   const temperatura = (20 + Math.random() * 10).toFixed(1);
   const luminosidade = Math.floor(Math.random() * 800);
   const agora = new Date().toLocaleTimeString();
+  const Velocidade do Vento= Math.floor(40 + Math.random() * 40);
+document.getElementById("Ven").innerText = 30 + " %";
 
   document.getElementById("temp").innerText = temperatura + " °C";
   document.getElementById("lux").innerText = luminosidade + " lux";
